@@ -1,35 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  color: #ffffff;
-}
-
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  background: #141b1c;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.page {
-  position: relative;
-  width: 1176px;
-  height: 773px;
-}
-
 .price-card {
   display: inline-block;
   width: 380px;
@@ -130,6 +98,40 @@ body {
   mix-blend-mode: normal;
 }
 
+.price-business {
+  left: 398px;
+}
+
+.price-webshop {
+  left: 796px;
+}
+
+.price-webshop__title {
+  height: 97px;
+}
+
+.price-card_popular {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -17.59px;
+  right: -17.69px;
+  bottom: 666px;
+}
+
+img {
+  margin: 18px 22px 19px 22px;
+}
+
+span {
+  width: 300px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+}
+
 .price-card__order-btn {
   height: 119px;
   display: -webkit-box;
@@ -166,37 +168,35 @@ body {
   background-color: #ec632a;
 }
 
-.price-business {
-  left: 398px;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.price-webshop {
-  left: 796px;
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
 }
 
-.price-webshop__title {
-  height: 97px;
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #141b1c;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.price-card_popular {
+.page {
   position: relative;
-}
-
-.badge {
-  position: absolute;
-  top: -17.59px;
-  right: -17.69px;
-  bottom: 666px;
-}
-
-img {
-  margin: 18px 22px 19px 22px;
-}
-
-span {
-  width: 300px;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 18px;
+  width: 1176px;
+  height: 773px;
 }
 /*# sourceMappingURL=styles.css.map */

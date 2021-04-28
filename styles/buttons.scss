@@ -1,0 +1,29 @@
+.price-card__order-btn {
+  height: 119px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_button {
+    width: 154.63px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+
+    &-green {
+      background-color: #5bb189;
+    }
+
+    &-blue {
+      background-color: #3a6ba5;
+    }
+
+    &-orange {
+      background-color: #ec632a;
+    }
+  }
+}
