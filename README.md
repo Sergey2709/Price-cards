@@ -2,7 +2,7 @@
 
 
 
-[Site link](https://sergey2709.github.io/Price-cards/)
+[Site link](https://sergey2709.github.io/price/)
 
 The tech stack is:
 
