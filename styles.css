@@ -2,6 +2,7 @@
   display: inline-block;
   width: 380px;
   height: 770px;
+  margin-right: 18px;
   background-color: #334247;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
 }
@@ -75,6 +76,9 @@
   mix-blend-mode: normal;
 }
 
+.price-webshop {
+  margin-right: 0;
+}
 .price-webshop__title {
   height: 97px;
 }
