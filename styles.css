@@ -39,7 +39,6 @@
 }
 .price-card__price_information {
   margin: 0;
-  padding: 0;
   width: 160px;
   height: 67px;
   font-weight: 700;
@@ -54,7 +53,7 @@
 .price-card__description_text {
   margin: 0;
   margin: auto;
-  width: 327.5px;
+  width: 327px;
   text-align: center;
   font-weight: 300;
   font-size: 15px;
@@ -62,7 +61,6 @@
 }
 .price-card__options-list {
   list-style-type: none;
-  margin: 0;
   padding: 0;
 }
 .price-card__options-list_item {
@@ -89,8 +87,8 @@
 
 .badge {
   position: absolute;
-  top: -17.59px;
-  right: -17.69px;
+  top: -17px;
+  right: -17px;
   bottom: 666px;
 }
 
@@ -112,7 +110,7 @@ span {
   justify-content: center;
 }
 .price-card__order-btn_button {
-  width: 154.63px;
+  width: 154px;
   height: 40px;
   border-radius: 20px;
   border: none;
