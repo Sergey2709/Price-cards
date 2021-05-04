@@ -1,0 +1,30 @@
+@import 'cards.scss';
+@import 'badge.scss';
+@import 'buttons.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #141b1c;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  position: relative;
+  width: 1176px;
+  height: 773px;
+  display: flex;
+  justify-content: space-between;
+}
