@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,203 +20,620 @@
   </head>
   <body>
     <div class="page">
-      <div class="price-card price-basic">
-        <div class="price-card__header">
-          <h1 class="price-card__title">Basic</h1>
-          <h3 class="price-card__subtitle">Website</h3>
-        </div>
-        <div class="price-card__price price-card__price-basic">
-          <h1 class="price-card__price_information">99€</h1>
-        </div>
-        <div class="price-card__description">
-          <p class="price-card__description_text">
-            Simple website made in the world's most popular CMS system, Wordpress.
-          </p>
-        </div>
-        <ul class="price-card__options-list">
-          <li class="price-card__options-list_item">
+      <div class="top-section">
+        <header class="header">
+          <div class="logo">
             <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
-              alt="Checkmark Green"
-            /><span>Website in WordPress</span>
-          </li>
-          <li class="price-card__options-list_item">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
-              alt="Checkmark Green"
-            /><span>3 sub pages</span>
-          </li>
-          <li class="price-card__options-list_item">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
-              alt="Checkmark Green"
-            /><span>Theme customized</span>
-          </li>
-          <li class="price-card__options-list_item">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
-              alt="Checkmark Green"
-            /><span>Help and guidance</span>
-          </li>
-          <li class="price-card__options-list_item">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
-              alt="Checkmark Green"
-            /><span>System introduction</span>
-          </li>
-          <li class="price-card__options-list_item">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
-              alt="Checkmark Green"
-            /><span>2 weeks free support</span>
-          </li>
-        </ul>
-        <div class="price-card__order-btn">
-          <button class="price-card__order-btn_button price-card__order-btn_button-green">
-            ORDER NOW
-          </button>
-        </div>
-      </div>
-      <div class="price-card price-card_popular price-business">
-        <svg
-          class="badge"
-          width="122"
-          height="123"
-          viewBox="0 0 122 123"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g clip-path="url(#clip0)">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0 18.0945L33.5151 17.9145C34.5861 17.9087 35.6146 18.3327 36.3704 19.0914L69.6883 52.5366L103.013 85.9881C103.765 86.7431 104.184 87.767 104.179 88.8327L104 122.095L0 18.0945Z"
-              fill="#DC3F45"
+              class="logo__image"
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png"
+              alt="logo"
             />
-            <path
-              d="M40.9446 34.5048C41.5584 35.1186 41.9874 35.7522 42.2316 36.4055C42.4823 37.0655 42.5417 37.7057 42.4097 38.326C42.2778 38.9464 41.9544 39.514 41.4396 40.0287C40.9314 40.5369 40.3638 40.8603 39.7369 40.9989C39.1165 41.1309 38.4763 41.0715 37.8164 40.8207C37.1696 40.5699 36.5393 40.1376 35.9256 39.5239L34.5297 38.128L32.6191 40.0386L31.0154 38.4349L37.9451 31.5053L40.9446 34.5048ZM37.1432 38.128C37.625 38.6098 38.0936 38.8738 38.5489 38.92C39.0109 38.9596 39.4333 38.788 39.8161 38.4052C40.2055 38.0159 40.377 37.5935 40.3309 37.1381C40.2913 36.6761 40.0306 36.2042 39.5488 35.7225L38.2421 34.4157L35.8365 36.8213L37.1432 38.128ZM41.5032 49.1603C40.7838 48.4409 40.2888 47.6357 40.0182 46.7448C39.7543 45.8604 39.7279 44.9827 39.939 44.1115C40.1634 43.2404 40.6155 42.4649 41.2953 41.7851C41.975 41.1054 42.7472 40.6566 43.6118 40.4388C44.4895 40.221 45.3706 40.2441 46.2549 40.5081C47.1459 40.7787 47.951 41.2737 48.6704 41.993C49.3898 42.7124 49.8814 43.5142 50.1454 44.3986C50.4094 45.283 50.4325 46.164 50.2147 47.0418C50.0035 47.9129 49.5581 48.6884 48.8783 49.3681C48.1985 50.0479 47.4198 50.4967 46.542 50.7145C45.6709 50.9257 44.7931 50.8993 43.9087 50.6353C43.0244 50.3713 42.2225 49.8796 41.5032 49.1603ZM42.8693 47.7941C43.2785 48.2033 43.7405 48.4805 44.2552 48.6257C44.7766 48.7643 45.298 48.7577 45.8193 48.6059C46.3473 48.4607 46.8258 48.1736 47.2548 47.7446C47.6838 47.3157 47.9708 46.8372 48.116 46.3092C48.2678 45.7878 48.2711 45.2698 48.1259 44.755C47.9873 44.2336 47.7134 43.7683 47.3043 43.3592C46.8951 42.95 46.4298 42.6761 45.9084 42.5375C45.3937 42.3923 44.8723 42.3923 44.3443 42.5375C43.8229 42.6893 43.3478 42.9797 42.9188 43.4087C42.4898 43.8376 42.1994 44.3128 42.0476 44.8342C41.9024 45.3622 41.8991 45.8868 42.0377 46.4082C42.1829 46.923 42.4601 47.3849 42.8693 47.7941ZM56.5479 50.1081C57.1617 50.7219 57.5907 51.3555 57.8349 52.0088C58.0856 52.6688 58.145 53.309 58.013 53.9293C57.8811 54.5497 57.5577 55.1173 57.0429 55.6321C56.5347 56.1402 55.9672 56.4636 55.3402 56.6022C54.7198 56.7342 54.0797 56.6748 53.4197 56.424C52.7729 56.1732 52.1426 55.7409 51.5289 55.1272L50.1331 53.7313L48.2224 55.642L46.6187 54.0382L53.5484 47.1086L56.5479 50.1081ZM52.7465 53.7313C53.2283 54.2131 53.6969 54.4771 54.1522 54.5233C54.6142 54.5629 55.0366 54.3913 55.4194 54.0085C55.8088 53.6192 55.9804 53.1968 55.9342 52.7414C55.8946 52.2794 55.6339 51.8075 55.1521 51.3258L53.8454 50.019L51.4398 52.4246L52.7465 53.7313ZM56.7036 64.3607C55.7137 63.3708 55.2154 62.3247 55.2088 61.2226C55.2088 60.127 55.717 59.0711 56.7333 58.0547L60.6139 54.1741L62.2176 55.7778L58.3964 59.599C57.1557 60.8398 57.0501 61.9749 58.0796 63.0045C58.5812 63.506 59.1125 63.7403 59.6735 63.7073C60.241 63.6677 60.8449 63.3279 61.4851 62.6877L65.3063 58.8665L66.8902 60.4504L63.0096 64.331C61.9932 65.3473 60.934 65.8522 59.8318 65.8456C58.7363 65.8456 57.6936 65.3506 56.7036 64.3607ZM68.475 62.0352L70.0787 63.6389L64.4558 69.2618L67.9305 72.7365L66.6238 74.0433L61.5453 68.9648L68.475 62.0352ZM73.6264 78.0761L70.4091 74.8587L68.3104 75.7299L66.6671 74.0866L76.6854 70.2456L78.2693 71.8295L74.4382 81.8577L72.7553 80.1748L73.6264 78.0761ZM74.3392 76.3536L75.8934 72.6016L72.1415 74.1559L74.3392 76.3536ZM79.5723 86.9918L80.1663 83.725L80.0871 83.6458L78.6912 82.2499L76.7608 84.1803L75.1571 82.5766L82.0868 75.647L85.0863 78.6465C85.7001 79.2603 86.1291 79.8939 86.3732 80.5472C86.624 81.2072 86.6834 81.8474 86.5514 82.4677C86.4194 83.0881 86.0961 83.6557 85.5813 84.1704C85.0665 84.6852 84.4956 85.0053 83.8687 85.1307C83.2549 85.2561 82.6213 85.1901 81.968 84.9327L81.2948 88.7143L79.5723 86.9918ZM83.9578 82.5469C84.3471 82.1575 84.5187 81.7352 84.4725 81.2798C84.4329 80.8178 84.1723 80.3459 83.6905 79.8642L82.3837 78.5574L79.9683 80.9729L81.275 82.2796C81.7568 82.7614 82.2287 83.0221 82.6906 83.0617C83.1526 83.1013 83.575 82.9297 83.9578 82.5469Z"
-              fill="white"
+            <div class="logo__text">
+              <div class="logo__name">Foundation</div>
+              <div class="logo__description">Statup landing template</div>
+            </div>
+          </div>
+          <nav class="navigation">
+            <a href="#" class="navigation__item navigation__item_selected">Home</a>
+            <a href="#" class="navigation__item">Stories</a>
+            <a href="#" class="navigation__item">Library<i class="navigation__arrow"></i></a>
+          </nav>
+          <button class="action-button header__button">Get Started</button>
+          <button class="header__menu-button">
+            <span class="header__menu-icon"></span>
+          </button>
+        </header>
+
+        <!-- HEADLINE -->
+
+        <section class="headline">
+          <div class="headline__content">
+            <h1 class="headline__title">Build stunning websites & apps.</h1>
+            <p class="headline__description">
+              Create live segments and target the right people for messages based on their
+              behaviors.
+            </p>
+            <div class="headline__action">
+              <button class="action-button headline__action-btn">Get Started</button>
+              <button class="headline__learn-more-btn headline__action-btn">Learn More</button>
+            </div>
+          </div>
+
+          <img
+            class="headline__banner"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/ouch.png"
+            alt="Headline Banner"
+          />
+        </section>
+      </div>
+
+      <!-- ABOUT -->
+
+      <section class="about">
+        <div class="article article-first">
+          <h3 class="article__title">What is it about?</h3>
+          <p class="article__text">
+            Building a website for a startup that looks amazing is not a rocket science anymore.
+          </p>
+        </div>
+        <div class="article">
+          <h3 class="article__title">Who is it for?</h3>
+          <p class="article__text">
+            Startups, small companies and teams, entrepreneurs and web developers.
+          </p>
+        </div>
+      </section>
+
+      <!-- CUSTOMERS -->
+
+      <section class="customers">
+        <div class="customers__item">
+          <img
+            class="customers__item-nyt"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-nyt.png"
+            alt="NYT Icon"
+          />
+        </div>
+        <div class="customers__item">
+          <img
+            class="customers__item-forbes"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-forbes.png"
+            alt="Forbes Icon"
+          />
+        </div>
+        <div class="customers__item">
+          <img
+            class="customers__item-apple"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-apple.png"
+            alt="Apple Icon"
+          />
+        </div>
+
+        <hr class="customers__between-line" />
+
+        <div class="customers__item">
+          <img
+            class="customers__item-mashable"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-mashable.png"
+            alt="Mashable Icon"
+          />
+        </div>
+        <div class="customers__item">
+          <img
+            class="customers__item-wsj"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-wsj.png"
+            alt="WSJ Icon"
+          />
+        </div>
+        <div class="customers__item">
+          <img
+            class="customers__item-google"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-google.png"
+            alt="Google Icon"
+          />
+        </div>
+        <hr class="customers__between-line" />
+      </section>
+
+      <!-- FEATURES -->
+
+      <section class="features">
+        <!-- MOBILE -->
+        <div class="features-mobile">
+          <div class="features-mobile__block">
+            <h3 class="features-mobile__block-name">Acquire Customers</h3>
+            <h2 class="features-mobile__block-title">Easily find leads and customers</h2>
+            <p class="features-mobile__block-description">
+              Send one-off and automated email, push, and in-app messages to people. Create better
+              stories.
+            </p>
+            <img
+              class="features-mobile__block-icon"
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/tip-asquire-customer.png"
+              alt="Birdth Icon"
             />
-          </g>
-          <defs>
-            <clipPath id="clip0">
-              <rect width="122" height="123" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
-        <div class="price-card__header">
-          <h1 class="price-card__title">Business</h1>
-          <h3 class="price-card__subtitle">Website</h3>
+            <h4 class="features-mobile__block-signature signature-first">
+              A better way to acquire new users
+            </h4>
+            <hr class="between-block__line" />
+          </div>
+          <div class="features-mobile__block">
+            <h3 class="features-mobile__block-name">Engage Users</h3>
+            <h2 class="features-mobile__block-title">Engage with your audience</h2>
+            <p class="features-mobile__block-description">
+              Send one-off and automated email, push, and in-app messages to people. Create better
+              stories.
+            </p>
+            <img
+              class="features-mobile__block-icon"
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/tip-engage-user.png"
+              alt="Picture Icon"
+            />
+            <h4 class="features-mobile__block-signature">Knowledge base and smart self-service</h4>
+            <hr class="between-block__line" />
+          </div>
+          <div class="features-mobile__block">
+            <h3 class="features-mobile__block-name">Support</h3>
+            <h2 class="features-mobile__block-title">The best customer experiences</h2>
+            <p class="features-mobile__block-description">
+              A beautifully simple system for tracking, prioritizing, and solving customer support
+              tickets.
+            </p>
+            <img
+              class="features-mobile__block-icon"
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/tip-support.png"
+              alt="TV Icon"
+            />
+            <h4 class="features-mobile__block-signature signature-last">Live chat and messaging</h4>
+          </div>
         </div>
-        <div class="price-card__price price-card__price-business">
-          <h1 class="price-card__price_information">299€</h1>
+        <!-- DESKTOP -->
+        <div class="features-content">
+          <h3 class="features-content__name">Features</h3>
+          <h2 class="features-content__title">Easily find leads and customers</h2>
+          <p class="features-content__description">
+            Send one-off and automated email, push, and in-app messages to people. Create better
+            stories.
+          </p>
+          <div class="selector">
+            <div class="selector-head">
+              <img
+                class="selector-head__icon"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-compas.png"
+                alt="Compass Icon"
+              />
+              <h5 class="selector-head__title">Acquire new customers</h5>
+            </div>
+            <div class="selector-head__description">
+              <p class="selector-head__description-text">
+                Everything you need to start building – including open-source code, documentation.
+              </p>
+              <hr class="selector-head__description-line" />
+            </div>
+
+            <div class="selector-engage">
+              <img
+                class="selector-engage__icon"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-building.png"
+                alt="Building Icon"
+              />
+              <a class="selector-engage__link" href="#">Engage users</a>
+            </div>
+            <hr class="selector-line" />
+            <div class="selector-develop">
+              <img
+                class="selector-develop__icon"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-bucket.png"
+                alt="Bucket Icon"
+              />
+              <a class="selector-develop__link" href="#">Develop across platforms</a>
+            </div>
+            <hr class="selector-line" />
+          </div>
         </div>
-        <div class="price-card__description">
-          <p class="price-card__description_text">
-            Advanced website made in the world's most popular CMS system, Wordpress.
+        <img
+          class="features__icon"
+          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/hidden-ouch.png"
+          alt="Ouch Icon"
+        />
+        <img
+          class="features__screen"
+          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/invision-screen.png"
+          alt="Invision Image"
+        />
+      </section>
+
+      <!-- INBOX -->
+
+      <section class="inbox">
+        <div class="illustration">
+          <img
+            class="illustration__icon"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/wheel.png"
+            alt="Wheel Icon"
+          />
+          <p class="illustration__signature">Connect with customers and grow faster</p>
+        </div>
+        <div class="inbox-description">
+          <h3 class="inbox-description__name">Team Inbox</h3>
+          <h2 class="inbox-description__title">Manage conversations</h2>
+          <p class="inbox-description__text">
+            One place to manage and respond to all conversations with leads and users. <br />Receive
+            messages from leads.
+          </p>
+          <div class="opinion">
+            <p class="opinion__text">
+              “Great widgets. Great selection. Great design and <b>easy to implement.</b> Definitely
+              a huge time saver for a web developer!”
+            </p>
+            <div class="opinion__person">
+              <img
+                class="opinion__person-foto"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-avatar.png"
+                alt="Directors Foto"
+              />
+              <div class="opinion__person-description">
+                <h6>Viella Malkovich</h6>
+                <p>Creative Director at Johnson</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMUNICATION -->
+
+      <section class="communication">
+        <div class="communication-body">
+          <div class="communication-content">
+            <h3 class="communication-content__name">Communicate Better</h3>
+            <h2 class="communication-content__title">Built for busy small teams</h2>
+            <p class="communication-content__text">
+              Three products that can be used independently or combined together for your company’s
+              needs.
+            </p>
+          </div>
+          <button class="communication-button"><span>Get Started</span></button>
+          <div class="communication-content__image">
+            <img
+              class="communication-content__image-icon"
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/hand-with-phone.png"
+              alt="Phone Icon"
+            />
+            <h6 class="communication-content__image-signature">
+              A better way to acquire new users
+            </h6>
+          </div>
+        </div>
+        <hr class="communication-line" />
+        <div class="communication-footer">
+          <div class="communication-footer__column">
+            <p class="communication-footer__column-text">
+              <b>Subscriptions.</b> Foundation works with the tools and services you already use
+              every day.
+            </p>
+            <a class="communication-footer__column-link" href="#">Learn more about subscriptions</a>
+          </div>
+          <div class="communication-footer__column">
+            <p class="communication-footer__column-text">
+              <b>Felxible Hours.</b> Get started with our simple snippet of JavaScript or easy to
+              install SDKs for iOS and Android.
+            </p>
+            <a class="communication-footer__column-link" href="#">Get more info about hours</a>
+          </div>
+          <div class="communication-footer__column communication-footer__column-last">
+            <p class="communication-footer__column-text">
+              <b>Fast Communication.</b> We offer measures like 2FA and SSO to ensure the safety of
+              your data.
+            </p>
+            <a class="communication-footer__column-link" href="#">Communication guidelines</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- AUDIENCE -->
+
+      <section class="audience">
+        <div class="audience__details">
+          <h4 class="audience__details_title">Engage Visitors</h4>
+          <h3 class="audience__details_sub-title">Understand your audience</h3>
+          <h6 class="audience__details_description">
+            Early stage company? Eligible applicants get all of our products for just $49 a month.
+          </h6>
+        </div>
+        <div class="audience__actions">
+          <button class="audience__action-button action-button">Get Started</button>
+          <button class="audience__learn-more-btn learn-more-btn">Learn More</button>
+        </div>
+        <div class="audience__list">
+          <div class="user-card card__developers">
+            <img
+              class="user-card_icon"
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-1.png"
+              alt="Developers Icon"
+            />
+            <p class="user-card_text">Developers</p>
+          </div>
+          <div class="user-card card__entertainment">
+            <img
+              class="user-card_icon"
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-2.png"
+              alt="Entertainment Icon"
+            />
+            <p class="user-card_text">Entertainment</p>
+          </div>
+          <div class="user-card card__athletes">
+            <img
+              class="user-card_icon"
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-3.png"
+              alt="Athletes Icon"
+            />
+            <p class="user-card_text">Athletes</p>
+          </div>
+          <div class="user-card card__creators">
+            <img
+              class="user-card_icon"
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-4.png"
+              alt="Creators Icon"
+            />
+            <p class="user-card_text">Creators</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CUSTOMERS -->
+
+      <section class="customers">
+        <div class="customers__item">
+          <img
+            class="customers__item-nyt"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-nyt.png"
+            alt="NYT Icon"
+          />
+        </div>
+        <div class="customers__item">
+          <img
+            class="customers__item-forbes"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-forbes.png"
+            alt="Forbes Icon"
+          />
+        </div>
+        <div class="customers__item">
+          <img
+            class="customers__item-apple"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-apple.png"
+            alt="Apple Icon"
+          />
+        </div>
+
+        <hr class="customers__between-line" />
+
+        <div class="customers__item">
+          <img
+            class="customers__item-mashable"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-mashable.png"
+            alt="Mashable Icon"
+          />
+        </div>
+        <div class="customers__item">
+          <img
+            class="customers__item-wsj"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-wsj.png"
+            alt="WSJ Icon"
+          />
+        </div>
+        <div class="customers__item">
+          <img
+            class="customers__item-google"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-google.png"
+            alt="Google Icon"
+          />
+        </div>
+        <hr class="customers__between-line" />
+      </section>
+
+      <!-- FEEDBACK -->
+
+      <section class="feedback">
+        <h2 class="feedback__title">
+          Trusted by the world’s most innovative businesses – big and small
+        </h2>
+        <p class="feedback__description">
+          “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create
+          landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+        </p>
+        <div class="feedback__person">
+          <h5 class="feedback__person-name">Viella Malkovich</h5>
+          <p class="feedback__person-position">Creative Director at Johnson</p>
+        </div>
+        <div class="feedback__dots">
+          <div class="feedback__dots-item checked"></div>
+          <div class="feedback__dots-item"></div>
+          <div class="feedback__dots-item"></div>
+        </div>
+        <img
+          class="feedback__image"
+          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/balloon.png"
+          alt="Balloon Icon"
+        />
+        <hr class="feedback-line" />
+      </section>
+
+      <!-- HIRING -->
+
+      <section class="hiring">
+        <div class="hiring-block">
+          <h2 class="hiring__title">We’re hiring</h2>
+          <p class="hiring__description">
+            We’re a team of lifelong learners. We’re equal parts left and right brained.
+          </p>
+          <button class="hiring__button">
+            <span class="hiring__button-text">More about Company</span>
+          </button>
+          <div class="hiring__vacancies">
+            <div class="vacancy">
+              <div class="vacancy__description">
+                <span class="vacancy__position">Front-End Developer</span>
+                <span class="vacancy__location">Los Angeles / Remote</span>
+              </div>
+              <div class="vacancy__block-arrow">
+                <img
+                  class="vacancy__arrow"
+                  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png"
+                  alt="ArrowRight Icon"
+                />
+              </div>
+            </div>
+            <div class="vacancy">
+              <div class="vacancy__description">
+                <span class="vacancy__position">Community Manager</span>
+                <span class="vacancy__location">New York / Full-Time</span>
+              </div>
+              <div class="vacancy__block-arrow">
+                <img
+                  class="vacancy__arrow"
+                  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png"
+                  alt="ArrowRight Icon"
+                />
+              </div>
+            </div>
+            <div class="vacancy">
+              <div class="vacancy__description">
+                <span class="vacancy__position">UX/UI Designer</span>
+                <span class="vacancy__location">New York / Full-Time</span>
+              </div>
+              <div class="vacancy__block-arrow">
+                <img
+                  class="vacancy__arrow"
+                  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png"
+                  alt="ArrowRight Icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ORDER -->
+
+      <section class="order">
+        <div class="order__details">
+          <img
+            class="order__illustration"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/illustration-window.png"
+            alt="Window"
+          />
+          <h3 class="order__title">Start your free trial.</h3>
+          <p class="order__text">
+            Get notified about company updates, news and blog posts. We hate spam.
+          </p>
+          <form class="order__form">
+            <input class="order__email" type="email" placeholder="Enter your email" />
+            <button class="action-button order__button">Get Started</button>
+          </form>
+          <p class="order__terms">
+            Free 14-day trial · Easy setup · Cancel any time. Check out
+            <a class="order__terms-link" href="#">Terms of Use.</a>
           </p>
         </div>
-        <ul class="price-card__options-list">
-          <li class="price-card__options-list_item">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
-              alt="Checkmark Blue"
-            /><span>Website in WordPress</span>
-          </li>
-          <li class="price-card__options-list_item">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
-              alt="Checkmark Blue"
-            /><span>3-5 sub pages</span>
-          </li>
-          <li class="price-card__options-list_item">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
-              alt="Checkmark Blue"
-            /><span>Theme customized</span>
-          </li>
-          <li class="price-card__options-list_item">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
-              alt="Checkmark Blue"
-            /><span>Help and guidance</span>
-          </li>
-          <li class="price-card__options-list_item">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
-              alt="Checkmark Blue"
-            /><span>System introduction</span>
-          </li>
-          <li class="price-card__options-list_item">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
-              alt="Checkmark Blue"
-            /><span>1 month free support</span>
-          </li>
-        </ul>
-        <div class="price-card__order-btn">
-          <button class="price-card__order-btn_button price-card__order-btn_button-blue">
-            ORDER NOW
-          </button>
+      </section>
+
+      <!-- FOOTER -->
+
+      <footer class="footer">
+        <div class="footer-navigation">
+          <div class="about-company">
+            <div class="logo">
+              <img
+                class="logo__image"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-dark.png"
+                alt="logo"
+              />
+              <div class="logo__text">
+                <div class="logo__name">Foundation</div>
+                <div class="logo__description">Statup landing template</div>
+              </div>
+            </div>
+
+            <div class="logo-vertical">
+              <img
+                class="logo-vertical__image"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-dark.png"
+                alt="logo-vertical"
+              />
+              <div class="logo-vertical__text">
+                <div class="logo-vertical__name">Foundation</div>
+                <div class="logo-vertical__description">Statup landing template</div>
+              </div>
+            </div>
+
+            <p class="footer__description">
+              Foundation is a website template for startups and small teams. It helps to build a
+              website in no time.
+            </p>
+            <div class="downloads">
+              <img
+                class="downloads__item"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/app-store.png"
+                alt="Apple Store Download"
+              />
+              <img
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/google-play.png"
+                alt="Google Play Download"
+              />
+            </div>
+          </div>
+          <div class="footer__line hide_desktop"></div>
+          <div class="additional-navigation">
+            <div class="additional-navigation__column nav-links">
+              <h3 class="nav-links__title">Product</h3>
+              <ul class="nav-links__list">
+                <li class="nav-links-item">Acquire Users</li>
+                <li class="nav-links-item">Content Marketing</li>
+                <li class="nav-links-item">Website Templates</li>
+                <li class="nav-links-item">Customer Management</li>
+                <li class="nav-links-item">Virtual Inbox</li>
+              </ul>
+            </div>
+
+            <div class="additional-navigation__column nav-links">
+              <h3 class="nav-links__title">Company</h3>
+              <ul class="nav-links__list">
+                <li class="nav-links-item">About Foundation</li>
+                <li class="nav-links-item">Brand Guidelines</li>
+                <li class="nav-links-item">Press Kit</li>
+                <li class="nav-links-item">Support</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="price-card price-webshop">
-        <div class="price-card__header price-webshop__title">
-          <h1 class="price-card__title">Webshop</h1>
-          <h3 class="price-card__subtitle">Website</h3>
+        <div class="footer__line hide_mobile"></div>
+        <div class="footer-links">
+          <nav class="terms">
+            <a href="#" class="terms__items">Terms</a>
+            <a href="#" class="terms__items">Privacy</a>
+            <a href="#" class="terms__items">Licence</a>
+          </nav>
+
+          <div class="social-links">
+            <a class="social-links__item" href="https://twitter.com" target="_blank"
+              ><img
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png"
+                alt="Twitter Link"
+            /></a>
+            <a class="social-links__item" href="https://facebook.com" target="_blank"
+              ><img
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png"
+                alt="Facebook Link"
+            /></a>
+            <a class="social-links__item" href="https://linkedin.com" target="_blank"
+              ><img
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png"
+                alt="LinkedIn Link"
+            /></a>
+          </div>
         </div>
-        <div class="price-card__price price-card__price-webshop">
-          <h1 class="price-card__price_information">599€</h1>
-        </div>
-        <div class="price-card__description">
-          <p class="price-card__description_text">
-            Your very own webshop made the world's most popular CMS system, Wordpress.
-          </p>
-        </div>
-        <ul class="price-card__options-list">
-          <li class="price-card__options-list_item">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
-              alt="Checkmark Orange"
-            /><span>Webshop in WordPress</span>
-          </li>
-          <li class="price-card__options-list_item">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
-              alt="Checkmark Orange"
-            /><span>3-5 sub pages</span>
-          </li>
-          <li class="price-card__options-list_item">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
-              alt="Checkmark Orange"
-            /><span>Theme customized</span>
-          </li>
-          <li class="price-card__options-list_item">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
-              alt="Checkmark Orange"
-            /><span>Help and guidance</span>
-          </li>
-          <li class="price-card__options-list_item">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
-              alt="Checkmark Orange"
-            /><span>System introduction</span>
-          </li>
-          <li class="price-card__options-list_item">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
-              alt="Checkmark Orange"
-            /><span>1 month free support</span>
-          </li>
-        </ul>
-        <div class="price-card__order-btn">
-          <button class="price-card__order-btn_button price-card__order-btn_button-orange">
-            ORDER NOW
-          </button>
-        </div>
-      </div>
+      </footer>
     </div>
   </body>
 </html>

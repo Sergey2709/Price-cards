@@ -1,8 +1,10 @@
-﻿**Price-cards Project**
+﻿**Startup Project**
 
 
 
-[Site link](https://sergey2709.github.io/price/)
+[Site link](https://sergey2709.github.io/startup/)
+
+**Layout’s breakpoint – 1400px**
 
 The tech stack is:
 
